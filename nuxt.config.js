@@ -22,7 +22,9 @@ module.exports = {
   plugins: [],
   buildModules: ['@nuxtjs/eslint-module'],
   modules: ['@nuxtjs/axios', '@nuxtjs/dotenv'],
-  axios: {},
+  axios: {
+    proxy: true
+  },
   build: {
     extend(config, ctx) {}
   }
